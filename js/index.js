@@ -158,6 +158,43 @@ gsap.to('#breaker-two',0,{display:"none",delay:2});
 gsap.to('#header',0,{display:"block",delay:.7});
 gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
+$('#stores-link').on('click', function () {
+  // Redirect to a different URL
+  window.location.href = 'https://agnelfrancisyt.gumroad.com';
+
+  // Optionally, you can add the following code to hide/show elements with GSAP if needed
+  // gsap.to('#navigation-content', 0, { display: "none", delay: 0.7 });
+  // gsap.to('#navigation-content', 0, { y: '-100%', delay: 0.7 });
+  // gsap.to('#header', 0, { display: "none" });
+  // gsap.to('#about', 0, { display: "none" });
+  // gsap.to('#portfolio', 0, { display: "none" });
+  // gsap.to('#contact', 0, { display: "none" });
+  // gsap.to('#blog', 0, { display: "none" });
+  // gsap.to('#breaker', 0, { display: "block" });
+  // gsap.to('#breaker-two', 0, { display: "block", delay: 0.1 });
+  // gsap.to('#breaker', 0, { display: "none", delay: 2 });
+  // gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
+  // gsap.to('#stores', 0, { display: "block", delay: 0.7 });
+  // gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+});
+$('#logo').on('click', function () {
+  gsap.to('#navigation-content', { display: "none", delay: 0.7 });
+  gsap.to('#navigation-content', { y: '-100%', delay: 0.7 });
+  gsap.to('#header', { display: "block" });
+  gsap.to('#about', { display: "none" });
+  gsap.to('#portfolio', { display: "none" });
+  gsap.to('#contact', { display: "none" });
+  gsap.to('#blog', { display: "none" });
+  gsap.to('#breaker', { display: "none" });
+  gsap.to('#breaker-two', { display: "none" });
+  gsap.to('#home', { display: "block", delay: 0.7 });
+  gsap.to('#navigation-content', { display: 'flex', delay: 2 });
+  window.location.href = "#home-link";
+});
+
+
+
+
 
 })
 $(function(){
@@ -184,6 +221,7 @@ $(function(){
      opacity:.6
     }) 
   }
+  
   $(window).on('mousemove',cursormover);
   $('.menubar').hover(cursorhover,cursor);
   $('a').hover(cursorhover,cursor);

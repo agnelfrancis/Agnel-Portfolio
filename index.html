@@ -9,7 +9,7 @@
 	<meta name="author" content="Agnel Francis" />
     <title>Agnel Francis Portfolio</title>
   <!--favicon-img--> 
-   <link rel="icon" type="image/png" href="images/favicon.png">
+   <link rel="icon" type="image/png" href="images/willy wonka logo.png">
    <!--favicon-img-->
    <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
@@ -49,6 +49,7 @@
                 <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
                 <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
                 <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
+                <a href="#" data-text="STORE" id="stores-link" >STORE</a>
             </div>
         </div>
         <!--Navigator-Fullscreen END-->
@@ -145,7 +146,7 @@
                      <br>
                <span class="about-second-line"> I am A Student Who Studies In Sarvodayam VHSS Aryampdam in Plus One Computer Science, I Mostly Like Web Dev and Video,Photo Editing, That's Me !</span>
                <div class="cv">
-               <a href="https://github.com/agnelfrancis/Agnel-Portfolio/blob/main/images/Black%20Orange%20Modern%20Aesthetic%20Graphic%20Designer%20CV%20Resume.pdf" download>
+               <a href="https://drive.google.com/file/d/1gKPeK1ucLRwZEDjX-xYBymtf99ekiK53/view?usp=sharing" download>
   <button>Download <span class="colors">CV</span></button>
 </a>
             </div>
@@ -335,7 +336,6 @@
                     </div>
                 </div>
                 </div>
-                ```html
                 <div class="portfolio-header">
                     <span class="color"> My </span> Portfolio
                     <span class="header-caption"> Some Of My <span class="color"> Works</span></span>
@@ -469,6 +469,14 @@
                     <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
                     <button type="button" id ="submit" value="send">Submit</button>
                  </form>
+                 <!-- Modal for Popup -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Thank you for your message! We will get back to you soon.</p>
+    </div>
+  </div>
+  
                
              </div>
             <!--Contact form-->
@@ -519,12 +527,79 @@
                        </div>
                <!--copyright-section-->
      </div>
+     <div id="stores">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
         <!--contact end-->
     </div>
     <!--all the divisions-->
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js"></script>
 
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get the modal
+          var modal = document.getElementById('myModal');
+      
+          // Get the button that opens the modal
+          var btn = document.getElementById('submit');
+      
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName('close')[0];
+      
+          // When the user clicks the button, open the modal
+          btn.onclick = function () {
+            // Show the modal
+            modal.style.display = 'block';
+      
+            // Clear form fields
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('subject').value = '';
+            document.getElementById('body').value = '';
+          };
+      
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = 'none';
+          };
+      
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = 'none';
+            }
+          };
+        });
+      </script>
+      
 </body>
 </html>

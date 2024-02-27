@@ -2561,4 +2561,118 @@ for tabs and large phones
         border-radius: 8px;
         transition: all .4s ease;
     }
+    #modalStores {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .stores-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 600px;
+    }
+    
+    #closeStores {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .stores {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+      }
+      
+      .stores-header {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        font-family: raleway;
+        color: whitesmoke;
+        padding: 10px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-weight: 900;
+      }
+      
+      .stores-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .store-item {
+        height: 420px;
+        width: 30%;
+        margin: 20px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+      
+      .store-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      
+      .store-item h3 {
+        font-size: 28px;
+        font-weight: 500;
+        padding: 20px;
+      }
+      
+      .store-item p {
+        font-size: 18px;
+        opacity: 0.9;
+        padding: 20px;
+      }
+      
+      .store-item .button {
+        font-size: 18px;
+        opacity: 0.9;
+        padding: 10px 20px;
+        background-color: #c70039;
+        color: whitesmoke;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    #stores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stores-header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .stores-content {
+        width: 70%;
+        text-align: justify;
+    }
+
+      
+    
 }
